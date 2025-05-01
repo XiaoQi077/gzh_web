@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暗区突围打单服务</title>
+    <style>
+        /* 基础样式 */
+        :root {
+            --pink-bg: #FFF0F5;       /* 淡粉色背景 */
+            --pink-border: #FFB6C1;   /* 樱花粉边框 */
+            --blue-border: #87CEEB;   /* 淡蓝边框 */
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: var(--pink-bg);
+            padding: 25px;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 3px solid var(--pink-border);
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        /* 头像区域 */
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        /* 网名样式 */
+        .username {
+            font-size: 26px;
+            color: #666;
+            margin: 0;
+        }
+
+        /* 标准话术（无背景） */
+        .description {
+            margin: 15px 0;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        .stats-item {
+            margin: 12px 0;
+            padding-left: 10px;
+            border-left: 2px solid var(--blue-border);
+        }
+
+        /* 价格区域 */
+        .price {
+            text-align: center;
+            color: #666;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+
+        /* 下单按钮 */
+        .order-btn {
+            display: block;
+            width: 180px;
+            margin: 0 auto;
+            padding: 10px;
+            background: white;
+            border: 2px solid var(--blue-border);
+            border-radius: 20px;
+            color: #666;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .order-btn:hover {
+            background: #F8F8FF;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 480px) {
+            body {
+                margin: 10px;
+                padding: 15px;
+            }
+            .profile-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .avatar {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头像 & 网名 -->
+    <div class="profile-section">
+        <img src="your-avatar.jpg" class="avatar" alt="头像">
+        <h1 class="username">秦忆宁</h1>
+    </div>
+
+    <!-- 实力展示 -->
+    <div class="description">
+        <div class="stats-item">暗区王牌打手｜8000+成功订单</div>
+        <div class="stats-item">99%好评率｜平台认证保障</div>
+        <div class="stats-item">全程手动｜隐私保护｜24小时服务</div>
+        <div class="stats-item">QQ：2482796363</div>
+    </div>
+
+    <!-- 价格 -->
+    <div class="price">
+        <div>当前优惠价</div>
+        <div style="font-size:16px; margin-top:8px;">10元 保20万</div>
+        <div style="font-size:16px; margin-top:8px;">15元 保40万</div>
+        <div style="font-size:16px; margin-top:8px;">20元 保60万</div>
+        <div style="font-size:16px; margin-top:8px;">30元 保100万</div>
+    </div>
+
+    <!-- 下单按钮 -->
+    <a href="YOUR_URL" class="order-btn">
+        立即下单
+    </a>
+</body>
+</html>
